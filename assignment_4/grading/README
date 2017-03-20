@@ -1,0 +1,6 @@
+Instructions:
+
+Paste your code i.e. StudentMiner.java in this directory and run using the following set of commands
+
+1) javac DropboxTestStudentMiner.java
+2) java DropboxTestStudentMiner

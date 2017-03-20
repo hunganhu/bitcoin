@@ -1,0 +1,6 @@
+Instructions:
+
+Paste your code i.e. CompliantNode.java in this directory and run using the following set of commands
+
+$javac TestCompliantNode.java
+$java TestCompliantNode
