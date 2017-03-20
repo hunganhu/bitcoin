@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="grading/Reference/|grading/" kind="src" path="assignment_1"/>
+	<classpathentry excluding="Reference/" kind="src" path="assignment_1/grading"/>
+	<classpathentry kind="src" path="assignment_1/grading/Reference"/>
+	<classpathentry excluding="grading/Reference/|grading/" kind="src" path="assignment_2"/>
+	<classpathentry excluding="Reference/" kind="src" path="assignment_2/grading"/>
+	<classpathentry kind="src" path="assignment_2/grading/Reference"/>
+	<classpathentry excluding="grading/Reference/|grading/" kind="src" path="assignment_3"/>
+	<classpathentry excluding="Reference/" kind="src" path="assignment_3/grading"/>
+	<classpathentry kind="src" path="assignment_3/grading/Reference"/>
+	<classpathentry excluding="grading/" kind="src" path="assignment_4"/>
+	<classpathentry kind="src" path="assignment_4/grading"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
