@@ -50,7 +50,7 @@ class TestIsValidTx {
       for (int i = 0; i < 32; i++) {
          key[i] = (byte) 1;
       }
-      
+      // create customers' signatures, including public key and private key
       prGen = new PRGen(key);
       
       people = new ArrayList<RSAKeyPair>();
@@ -61,10 +61,11 @@ class TestIsValidTx {
       utxoToKeyPair = new HashMap<UTXO, RSAKeyPair>();
 
       utxoPool = new UTXOPool();
-
+	  //create nUTXOTx transactions	
       for (int i = 0; i < nUTXOTx; i++) {
          int num = SampleRandom.randomInt(maxUTXOTxOutput) + 1;
          Transaction tx = new Transaction();
+         // In a transaction, create num orders, append to output list.
          for (int j = 0; j < num; j++) {
             // pick a random public address
             int rIndex = SampleRandom.randomInt(people.size());
@@ -73,6 +74,7 @@ class TestIsValidTx {
             tx.addOutput(value, addr);
             keyPairAtIndex.put(j, people.get(rIndex));
          }
+         // create hash of the transaction, TX id.
          tx.finalize();
          // add all tx outputs to utxo pool
          for (int j = 0; j < num; j++) {
@@ -777,6 +779,11 @@ public class TestTxHandler {
 	  TestIsValidTx.run(args);
       String skpFile = "files/SampleKeyPairs.txt";
       String supFile = "files/SampleUTXOPool.txt";
+      System.out.println("Working Directory = " +
+              System.getProperty("user.dir"));
+      String current = new java.io.File( "." ).getCanonicalPath();
+      System.out.println("Current dir:"+current);
+
       SampleKeyPairs skp = SampleKeyPairsFileHandler.readKeyPairsFromFile(skpFile);
       SampleUTXOPool sup = SampleUTXOPoolFileHandler.readSampleUTXOPoolFromFile(skp, supFile);
 
