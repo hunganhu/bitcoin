@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="grading/Reference/|grading/" kind="src" path="assignment_1"/>
-	<classpathentry excluding="Reference/" kind="src" path="assignment_1/grading"/>
+	<classpathentry excluding="assignment_1/|assignment_1/grading/|assignment_1/grading/Reference/|assignment_2/|assignment_2/grading/|assignment_2/grading/Reference/|assignment_3/|assignment_3/grading/|assignment_3/grading/Reference/|assignment_4/|assignment_4/grading/" kind="src" path=""/>
+	<classpathentry excluding="grading/Reference/|grading/|grading/files/" kind="src" path="assignment_1"/>
+	<classpathentry excluding="Reference/|files/" kind="src" path="assignment_1/grading"/>
+	<classpathentry kind="src" path="assignment_1/grading/files"/>
 	<classpathentry kind="src" path="assignment_1/grading/Reference"/>
 	<classpathentry excluding="grading/Reference/|grading/" kind="src" path="assignment_2"/>
 	<classpathentry excluding="Reference/" kind="src" path="assignment_2/grading"/>
@@ -11,6 +13,9 @@
 	<classpathentry kind="src" path="assignment_3/grading/Reference"/>
 	<classpathentry excluding="grading/" kind="src" path="assignment_4"/>
 	<classpathentry kind="src" path="assignment_4/grading"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="assignment_1/grading/algs4.jar"/>
+	<classpathentry kind="lib" path="assignment_1/grading/rsa.jar"/>
+	<classpathentry kind="lib" path="assignment_1/grading/scroogeCoinGrader.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
