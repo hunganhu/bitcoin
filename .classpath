@@ -14,8 +14,8 @@
 	<classpathentry excluding="grading/" kind="src" path="assignment_4"/>
 	<classpathentry kind="src" path="assignment_4/grading"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="assignment_1/grading/algs4.jar"/>
-	<classpathentry kind="lib" path="assignment_1/grading/rsa.jar"/>
-	<classpathentry kind="lib" path="assignment_1/grading/scroogeCoinGrader.jar"/>
+	<classpathentry kind="lib" path="assignment_3/grading/blockChainGrader.jar"/>
+	<classpathentry kind="lib" path="assignment_3/rsa.jar"/>
+	<classpathentry kind="lib" path="assignment_3/grading/algs4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
