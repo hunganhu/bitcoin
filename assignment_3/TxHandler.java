@@ -13,15 +13,23 @@ import java.util.*;
  */
 public class TxHandler {
 
-	// assuming all utxo's required by this transaction will be in utxo pool
 	/* Creates a public ledger whose current UTXOPool (collection of unspent 
 	 * transaction outputs) is utxoPool. This should make a defensive copy of 
 	 * utxoPool by using the UTXOPool(UTXOPool uPool) constructor.
 	 */
 	private UTXOPool publicLedger;
+	
 	public TxHandler(UTXOPool utxoPool) {
 		publicLedger = new UTXOPool(utxoPool);
 	}
+	
+	/*Returns the current UTXOpool. If no outstandingUTXOs, returns an empty(non-null) 
+	 * UTXOPool object.
+	 */
+	public UTXOPool getUTXOPool() {
+		return publicLedger;
+	}
+
 
 	/* Returns true if 
 	 * (1) all outputs claimed by tx are in the current UTXO pool, 
