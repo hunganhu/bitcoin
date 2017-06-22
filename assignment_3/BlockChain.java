@@ -163,13 +163,13 @@ public class BlockChain {
     	   maxHeightNode = currentNode;
            height = currentNode.height;
         }
-/*       
+      
        // update the transaction pool, removing transactions used by block and return it
        ArrayList<Transaction> allTxs = block.getTransactions();
        for (Transaction tx : allTxs) {
            txPool.removeTransaction(tx.getHash());
        }
-*/           
+       
        // block should be at height > (maxHeight - CUT_OFF_AGE).
        int proposedHeight = parentBlockNode.height + 1;
        if (proposedHeight <= maxHeightNode.height - CUT_OFF_AGE) {
